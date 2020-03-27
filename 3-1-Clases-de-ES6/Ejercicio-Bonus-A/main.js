@@ -24,8 +24,9 @@ class Square extends Polygon {
 class Triangle extends Polygon {
   constructor(base, height) {
     super(3, base, height);
-    this.base = base;
-    this.height = height;
+    // this.base = base;
+    // this.height = height;
+    // esto no hace falta por que lo recoge del padre
   }
 
   area() {
