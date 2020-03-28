@@ -1,0 +1,39 @@
+@import 'vars';
+
+.App {
+  text-align: left;
+  background-color: $backgroundCard;
+  margin: 10rem;
+  padding: 1rem;
+
+  &-main {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+  &-content {
+    margin: 2rem;
+    font-size: 20px;
+  }
+  &-logo {
+    height: 10vmin;
+    pointer-events: none;
+    margin: 1rem;
+  }
+  &-header {
+    display: flex;
+    align-items: center;
+  }
+  &-name {
+    margin-bottom: 0rem;
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+  }
+  &-link {
+    color: gray;
+  }
+}
