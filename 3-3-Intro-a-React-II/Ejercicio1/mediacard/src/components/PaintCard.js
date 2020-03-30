@@ -24,7 +24,6 @@ class PaintCard extends React.Component {
             >
               Leer más..
         </a>
-
             <i className="fas fa-heart"></i>
           </div>
         </main>
