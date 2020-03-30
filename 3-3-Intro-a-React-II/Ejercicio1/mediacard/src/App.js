@@ -1,6 +1,6 @@
 import React from 'react';
 import foto from './icono-margui.jpeg';
-import './App.scss';
+import './App.css';
 
 const header = (
   <header className="App-header">
