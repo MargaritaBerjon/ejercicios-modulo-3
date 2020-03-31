@@ -1,6 +1,7 @@
 import React from 'react';
-import '.././App.css';
+import '../App.css';
 import { ItemList } from './ItemList';
+
 const items = [
   {
     name: 'Cereales con chocolate',
@@ -28,7 +29,7 @@ const items = [
 function App() {
   return (
     <div className="App">
-      <ItemList items={items}></ItemList>
+      <ItemList items={items} />
     </div>
   );
 }
