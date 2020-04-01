@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import HalfPage from './HalfPage';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HalfPage styling="info">
+        <h1 className="horizontal-center">Welcome</h1>
+        <p>Thank you for visiting our webpage!</p>
+        <p>We hope you enjoy our new shiny site!</p>
+      </HalfPage>
     </div>
   );
 }
 
 export default App;
+
+
