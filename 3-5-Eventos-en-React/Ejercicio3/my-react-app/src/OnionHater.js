@@ -8,7 +8,7 @@ class OnionHater extends React.Component {
   }
 
   onKeyPressListener(ev) {
-    if (ev.target.value.includes('cebolla')) {
+    if (ev.target.value.includes('cebolla') || ev.target.value.includes('cebolla'.toUpperCase())) {
       this.isHating = true;
     } else {
       this.isHating = false;
