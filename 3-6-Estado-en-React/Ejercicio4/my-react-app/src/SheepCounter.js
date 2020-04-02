@@ -23,9 +23,9 @@ class SheepCounter extends React.Component {
 
   render() {
     return (
-      <div className="counter">
-        <p className="number">{this.state.counter}</p>
-        <button className="button" onClick={this.upDateCounter}>
+      <div>
+        <p>{this.state.counter}</p>
+        <button onClick={this.upDateCounter}>
           Botón
         </button>
       </div>
