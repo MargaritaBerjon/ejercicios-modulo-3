@@ -5,16 +5,18 @@ class Clock extends React.Component {
   constructor(props) {
     super(props);
 
-    this.date = new Date();
+    const date = new Date();
 
     this.state = {
-      hours: this.date.getHours(),
-      minutes: this.date.getMinutes(),
-      seconds: this.date.getSeconds()
+      hours: date.getHours(),
+      minutes: date.getMinutes(),
+      seconds: date.getSeconds()
 
     };
 
-    setInterval(() => { this.updateClock() }, 1000);
+    setInterval(
+      () => { this.updateClock() },
+      1000);
 
     this.updateClock = this.updateClock.bind(this);
   }
@@ -26,7 +28,6 @@ class Clock extends React.Component {
       minutes: date.getMinutes(),
       seconds: date.getSeconds()
     })
-
   }
 
 
