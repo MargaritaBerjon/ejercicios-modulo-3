@@ -3,15 +3,12 @@ import React from 'react';
 
 
 
-function Destiny(props) {
-  const onChangeListener = ev => {
-    let selectedCity = ev.target.value;
+function CitySelector(props) {
+  function onChangeHandler(ev) {
     props.city(ev.target.value);
-    console.log(`tu destino elegido es ${this.selectedCity}`)
-
   }
   return (
-    <select name="select" onChange={onChangeListener}>
+    <select name="select" onChange={onChangeHandler}>
       <option value="Buenos Aires">Buenos Aires</option>
       <option value="Sydney">Sydney</option>
       <option value="Praga">Praga</option>
@@ -21,4 +18,4 @@ function Destiny(props) {
   );
 }
 
-export default Destiny;
+export default CitySelector;

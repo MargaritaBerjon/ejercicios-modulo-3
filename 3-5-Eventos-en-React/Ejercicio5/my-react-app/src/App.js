@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import Destiny from './Destiny';
+import CitySelector from './CitySelector';
+import CityImage from './CityImage';
 
 function App() {
+  const [citySelected, setCity] = useState('Boston');
+
+  const destinySelected = (city) => {
+    setCity(city);
+  }
+
   return (
-    <Destiny />
+    <div>
+      <CitySelector city={destinySelected}></CitySelector>
+      <CityImage citySelected={citySelected}></CityImage>
+    </div>
   );
 }
 
