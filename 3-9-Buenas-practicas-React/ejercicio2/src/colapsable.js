@@ -5,6 +5,10 @@ function Collapsable(props) {
   // const [hiddenClass, setHiddenClass] = useState(['variable-data-collapsable']);
   const [hiddenClass, setHiddenClass] = useState('');
 
+  function shorMore() {
+    setHiddenClass(hiddenClass.length > 0 ? '' : ' visible');
+    // setHiddenClass(hiddenClass.length < 2 ? [...hiddenClass, 'visible'] : ['variable-data-collapsable']);
+  }
 
   return (
     <div className="Collapsable">
@@ -18,10 +22,6 @@ function Collapsable(props) {
     </div >
   );
 
-  function shorMore() {
-    setHiddenClass(hiddenClass.length > 0 ? '' : ' visible');
-    // setHiddenClass(hiddenClass.length < 2 ? [...hiddenClass, 'visible'] : ['variable-data-collapsable']);
-  }
 }
 
 export default Collapsable;

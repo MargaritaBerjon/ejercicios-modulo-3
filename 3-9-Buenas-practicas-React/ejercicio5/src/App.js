@@ -9,8 +9,10 @@ const users = [
   { name: 'Gregory Goyle', time: 56 }
 ];
 
+console.log(users.slice(0, 3).map((name, time) => name, time));
 
 function App() {
+
   return (
     <div className="App">
       {
