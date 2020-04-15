@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+}
+
+.filter {
+  width: 30vw;
+  padding-bottom: 60px;
+}
+
+.Chechbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.results-container {
+  padding: 1rem;
+  border: 2px solid black;
+}
+
+.results-img {
+  display: flex;
+}
+
+.results-content {
+  margin-left: 1rem;
+}
