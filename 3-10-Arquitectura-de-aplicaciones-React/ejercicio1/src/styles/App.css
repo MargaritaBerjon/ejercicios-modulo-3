@@ -4,6 +4,23 @@
 
 .filter {
   width: 30vw;
-  height: 50vh;
-  border-right: 2px solid black;
+  padding-bottom: 60px;
+}
+
+.Chechbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.results-container {
+  padding: 1rem;
+  border: 2px solid black;
+}
+
+.results-img {
+  display: flex;
+}
+
+.results-content {
+  margin-left: 1rem;
 }

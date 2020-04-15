@@ -5,13 +5,19 @@ function Card(props) {
 
 
   return (
-    <>
+    <div className="results-container">
       <h2 >{props.elem.name.first}</h2>
-      <img src={props.elem.picture.large} alt={props.elem.name.first}></img>
-      <p>{props.elem.location.city}</p>
-      <p>{props.elem.gender}</p>
-      <p>{props.elem.dob.age}</p>
-    </>
+      <div className="results-img">
+        <img src={props.elem.picture.large} alt={props.elem.name.first}></img>
+        <div className="results-content">
+          <p>{'Ciudad: ' + props.elem.location.city}</p>
+          <p>{'Género: ' + props.elem.gender}</p>
+          <p>{'Edad: ' + props.elem.dob.age}</p>
+        </div>
+      </div>
+    </div>
+
+
   );
 }
 

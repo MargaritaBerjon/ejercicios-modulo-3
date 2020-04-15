@@ -4,6 +4,7 @@ import Card from './Card';
 
 function List(props) {
 
+
   return (
     <div className="List">
       {props.list.map((elem, i) => <Card key={i} elem={elem}></Card>)}

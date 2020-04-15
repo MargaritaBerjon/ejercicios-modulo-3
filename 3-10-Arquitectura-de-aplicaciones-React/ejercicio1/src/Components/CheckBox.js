@@ -3,15 +3,19 @@ import '../styles/App.css';
 
 function CheckBox(props) {
 
-  console.log(props);
+  function inputChange(ev) {
+    props.filterModifyed(ev.target);
+  }
 
   return (
-    <>
-      <input type="checkbox" id="female" name="female" value="female" />
-      <label htmlFor="female"> Mujer</label>
-      <input type="checkbox" id="male" name="male" value="male" />
-      <label htmlFor="male"> Hombre</label>
-    </>
+    <div className="Chechbox">
+      {
+        props.list.map((elem, i) =>
+          <label htmlFor={elem} key={i}>  <input type="checkbox" id={elem} name={props.name} value={elem} onChange={inputChange} />{elem}</label>
+        )
+      }
+
+    </div>
   );
 }
 
