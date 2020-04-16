@@ -76,7 +76,7 @@ function App() {
             }
           }
           }
-        />
+        ></Route>
       </Switch>
 
 
